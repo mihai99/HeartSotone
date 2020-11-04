@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="orc" size="5.000000 6.824818" />
+    <ImageTarget name="golem" size="5.000000 6.824818" />
+    <ImageTarget name="wizard" size="5.000000 6.824818" />
+    <ImageTarget name="spider" size="5.000000 6.824818" />
+    <ImageTarget name="rhino" size="5.000000 6.824818" />
+    <ImageTarget name="knight" size="5.000000 6.824818" />
+    <ImageTarget name="goblin_archer" size="5.000000 6.824818" />
+    <ImageTarget name="flyindDragon" size="5.000000 6.824818" />
+    <ImageTarget name="fireball" size="5.000000 6.824818" />
+    <ImageTarget name="fatDragon" size="5.000000 6.824818" />
+    <ImageTarget name="fantasy-chest" size="5.000000 6.824818" />
+    <ImageTarget name="enchantedCat" size="5.000000 6.824818" />
+    <ImageTarget name="dwarf" size="5.000000 6.824818" />
+    <ImageTarget name="dogKnight" size="5.000000 6.824818" />
+    <ImageTarget name="centaur" size="5.000000 6.824818" />
+    <ImageTarget name="cactus" size="5.000000 6.824818" />
+    <ImageTarget name="baby_golem" size="5.000000 6.824818" />
+    <ImageTarget name="armoredskeleton" size="5.000000 6.824818" />
+    <ImageTarget name="bugMonster" size="5.000000 6.824818" />
+    <ImageTarget name="arthas" size="5.000000 6.824818" />
+    <ImageTarget name="KingOfSpades" size="0.100000 0.138220" />
+  </Tracking>
+</QCARConfig>
