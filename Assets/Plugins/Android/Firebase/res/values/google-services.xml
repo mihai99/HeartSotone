@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://heartsotone-ar.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">733914307669</string>
+  <string name="google_storage_bucket" translatable="false">heartsotone-ar.appspot.com</string>
+  <string name="project_id" translatable="false">heartsotone-ar</string>
+  <string name="google_api_key" translatable="false">AIzaSyAllAHDN9YJHi2vwbduqG9piBxmFGIq2qM</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAllAHDN9YJHi2vwbduqG9piBxmFGIq2qM</string>
+  <string name="google_app_id" translatable="false">1:733914307669:android:0a9c7755210d50ea9c48dc</string>
+  <string name="default_web_client_id" translatable="false">733914307669-vjja7qcl02ljoc3poiu1lmaoa69r29vb.apps.googleusercontent.com</string>
+</resources>

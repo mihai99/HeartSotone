@@ -13,6 +13,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
         PhotonNetwork.NickName = "player_" + Random.Range(0, 1000).ToString();
         PhotonNetwork.GameVersion = "0.0.1";
         PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.AutomaticallySyncScene=true;
     }
 
     public override void OnConnectedToMaster()
@@ -20,6 +21,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
         print("Connected to master");
         PhotonNetwork.JoinLobby();
         PhotonNetwork.LocalPlayer.NickName = FirebaseManager.instance.Auth.CurrentUser.DisplayName;
+        PhotonNetwork.AutomaticallySyncScene=true;
     }
 
     public override void OnDisconnected(Photon.Realtime.DisconnectCause cause)

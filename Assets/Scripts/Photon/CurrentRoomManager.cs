@@ -10,10 +10,12 @@ public class CurrentRoomManager : MonoBehaviourPunCallbacks
     public RoomInfo RoomInfo;
     public RoomPlayerCard PlayerCard;
     public RoomPlayerCard EnamyPlayerCard;
+    [SerializeField] GameObject startGameButton;
 
     public void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        PhotonNetwork.AutomaticallySyncScene=true;
     }
 
     public override void OnJoinedRoom()
@@ -31,6 +33,11 @@ public class CurrentRoomManager : MonoBehaviourPunCallbacks
                 OnPlayerEnteredRoom(x);
             }
         });
+        startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+    }
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        startGameButton.SetActive(PhotonNetwork.IsMasterClient);
     }
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
@@ -52,4 +59,10 @@ public class CurrentRoomManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LeaveRoom();
     }
+
+    public void StartGame(){
+        PhotonNetwork.LoadLevel(3);
+    }
+    
+    
 }
