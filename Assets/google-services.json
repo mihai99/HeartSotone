@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "733914307669",
+    "firebase_url": "https://heartsotone-ar.firebaseio.com",
+    "project_id": "heartsotone-ar",
+    "storage_bucket": "heartsotone-ar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733914307669:android:0a9c7755210d50ea9c48dc",
+        "android_client_info": {
+          "package_name": "com.imrproject.heartsotone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733914307669-vjja7qcl02ljoc3poiu1lmaoa69r29vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAllAHDN9YJHi2vwbduqG9piBxmFGIq2qM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733914307669-vjja7qcl02ljoc3poiu1lmaoa69r29vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
