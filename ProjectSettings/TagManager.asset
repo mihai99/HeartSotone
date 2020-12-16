@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Canvas
   - LoginRegisterUiManager
+  - GameManager
+  - EnamyPlayer
   layers:
   - Default
   - TransparentFX

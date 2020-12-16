@@ -13,4 +13,8 @@ public class PlayerNameUpdate : MonoBehaviourPunCallbacks
     {
         this.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = PhotonNetwork.LocalPlayer.NickName;
     }
+    public void Update()
+    {
+        this.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = PhotonNetwork.LocalPlayer.NickName;
+    }
 }
