@@ -26,6 +26,10 @@ public class CardManager : MonoBehaviour
         HealthBarSlider.value=CalculateHealth();
         if(currentHealth<=0){
             gameObject.GetComponentInChildren<Renderer>().enabled = false;
+            if(gameObject.transform.GetParentComponent<EnamySpawnPoint>())
+            {
+                gameObject.transform.GetParentComponent<EnamySpawnPoint>().CardMonster = null;
+            }
             Destroy(gameObject);
         }
     }
