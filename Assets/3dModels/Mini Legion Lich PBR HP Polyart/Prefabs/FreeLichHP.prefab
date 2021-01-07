@@ -796,6 +796,7 @@ GameObject:
   - component: {fileID: 400048}
   - component: {fileID: 9500000}
   - component: {fileID: 588231090420598124}
+  - component: {fileID: 8054016033752848934}
   m_Layer: 0
   m_Name: FreeLichHP
   m_TagString: Untagged
@@ -857,6 +858,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 2173316394820111521}
   slider: {fileID: 6129272221726751407}
+--- !u!136 &8054016033752848934
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.3044608
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.6522315, z: 0}
 --- !u!1001 &304497624
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1674,6 +1674,7 @@ GameObject:
   - component: {fileID: 14307310}
   - component: {fileID: 11447264}
   - component: {fileID: 5177751755314941481}
+  - component: {fileID: 2965322942763389741}
   m_Layer: 0
   m_Name: Centaur
   m_TagString: Untagged
@@ -1770,8 +1771,22 @@ MonoBehaviour:
   attack: 6
   mana: 5
   currentHealth: 0
-  healthBarUI: {fileID: 0}
-  slider: {fileID: 0}
+  healthBarUI: {fileID: 8024664611345740672}
+  slider: {fileID: 2628961787005961614}
+--- !u!136 &2965322942763389741
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.26814207
+  m_Height: 1.676918
+  m_Direction: 1
+  m_Center: {x: -0.025268987, y: 0.7552993, z: 0.17}
 --- !u!1 &136472
 GameObject:
   m_ObjectHideFlags: 0
@@ -4933,9 +4948,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25cf6a079869e4046ad517b681dcf6c1, type: 3}
+--- !u!1 &8024664611345740672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2173316394587737977, guid: 25cf6a079869e4046ad517b681dcf6c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8175298095228550393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7487341733961802927 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1629212275481401430, guid: 25cf6a079869e4046ad517b681dcf6c1,
     type: 3}
   m_PrefabInstance: {fileID: 8175298095228550393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2628961787005961614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6129272221959944567, guid: 25cf6a079869e4046ad517b681dcf6c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8175298095228550393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -2204,6 +2204,7 @@ GameObject:
   - component: {fileID: 4847383057965624}
   - component: {fileID: 95026947950475570}
   - component: {fileID: 4203329336746549423}
+  - component: {fileID: 5838917890468655217}
   m_Layer: 0
   m_Name: SkeletonOutlaw_Armor - LOD0
   m_TagString: Untagged
@@ -2271,6 +2272,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 1548243801790151278}
   slider: {fileID: 6798976022292122720}
+--- !u!136 &5838917890468655217
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809680881062764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.1591475
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.0644294, z: 0}
 --- !u!1 &1813734462565108
 GameObject:
   m_ObjectHideFlags: 0

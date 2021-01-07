@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 4444695180855720}
   - component: {fileID: 95025375702580604}
   - component: {fileID: 4351088331188052437}
+  - component: {fileID: 7187941227372249165}
   m_Layer: 0
   m_Name: Polygonal Metalon Red
   m_TagString: Untagged
@@ -179,6 +180,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 2706309814316382196}
   slider: {fileID: 7973650956279808506}
+--- !u!136 &7187941227372249165
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128758269040250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.61519504
+  m_Height: 2.6699824
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.83, z: -0.02017388}
 --- !u!1 &1130806907750044
 GameObject:
   m_ObjectHideFlags: 0

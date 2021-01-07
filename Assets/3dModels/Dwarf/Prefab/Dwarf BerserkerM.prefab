@@ -2645,6 +2645,7 @@ GameObject:
   - component: {fileID: 4161788898430874}
   - component: {fileID: 95244105348094984}
   - component: {fileID: 843800571644335095}
+  - component: {fileID: 5806668776781077085}
   m_Layer: 0
   m_Name: Dwarf BerserkerM
   m_TagString: Untagged
@@ -2707,6 +2708,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 9089225750506863057}
   slider: {fileID: 3820685853029781471}
+--- !u!136 &5806668776781077085
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615335249088072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3248069
+  m_Height: 1.4049205
+  m_Direction: 1
+  m_Center: {x: 0.001084207, y: 0.70114976, z: 0}
 --- !u!1 &1622815368568900
 GameObject:
   m_ObjectHideFlags: 0

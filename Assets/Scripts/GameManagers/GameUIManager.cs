@@ -31,6 +31,9 @@ public class GameUIManager : MonoBehaviour
         PlayerMana.text = "Mana: " + GameManager.CurrentMana.ToString();
         PlayerHealthSlider.value = (float)GameManager.CurrentHealth / GameManager.TotalHealth;
         EnamyHealthSlider.value = (float)GameManager.CurrentEnamyHealth / GameManager.TotalHealth;
-        EnamyName.text = PhotonNetwork.CurrentRoom.Players.Values.ToList().First(x => x.NickName != PhotonNetwork.LocalPlayer.NickName).NickName;
+        if(PhotonNetwork.IsConnected)
+        {
+            EnamyName.text = PhotonNetwork.CurrentRoom.Players.Values.ToList().First(x => x.NickName != PhotonNetwork.LocalPlayer.NickName).NickName;
+        }
     }
 }

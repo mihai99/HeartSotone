@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2310990}
   - component: {fileID: 9510990}
   - component: {fileID: 3735731430655696797}
+  - component: {fileID: 1417283119922422246}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -119,6 +120,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 2173316394887366303}
   slider: {fileID: 6129272221794005137}
+--- !u!136 &1417283119922422246
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 37.001873
+  m_Height: 68.03949
+  m_Direction: 1
+  m_Center: {x: -1.2730788, y: -0.20151895, z: 0.5696373}
 --- !u!1001 &371460582
 PrefabInstance:
   m_ObjectHideFlags: 0

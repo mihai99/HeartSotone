@@ -1224,6 +1224,7 @@ GameObject:
   - component: {fileID: 8422892626600249584}
   - component: {fileID: 8422892626592999198}
   - component: {fileID: 553132791355583134}
+  - component: {fileID: 534285111413153994}
   m_Layer: 0
   m_Name: DogPBR
   m_TagString: Untagged
@@ -1285,6 +1286,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 7863662203964979047}
   slider: {fileID: 2740423055922119017}
+--- !u!136 &534285111413153994
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422892626600285392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3741778
+  m_Height: 1.423063
+  m_Direction: 1
+  m_Center: {x: 0.011756169, y: 0.6836, z: 0}
 --- !u!1 &8422892626600285394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,6 +2562,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25cf6a079869e4046ad517b681dcf6c1, type: 3}
+--- !u!1 &7863662203964979047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2173316394587737977, guid: 25cf6a079869e4046ad517b681dcf6c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8289012155560245278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7319584480251240520 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1629212275481401430, guid: 25cf6a079869e4046ad517b681dcf6c1,
@@ -2565,12 +2586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &7863662203964979047 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2173316394587737977, guid: 25cf6a079869e4046ad517b681dcf6c1,
-    type: 3}
-  m_PrefabInstance: {fileID: 8289012155560245278}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8845912188884370513
 PrefabInstance:
   m_ObjectHideFlags: 0

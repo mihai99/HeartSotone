@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 111495423891279680}
   - component: {fileID: 114489361866395698}
   - component: {fileID: 7507463344396516759}
+  - component: {fileID: 3311551082874476599}
   m_Layer: 0
   m_Name: StoneMonster
   m_TagString: Untagged
@@ -299,6 +300,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 3220261231808401702}
   slider: {fileID: 7464168433788053288}
+--- !u!136 &3311551082874476599
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713781036754730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.49, z: 0}
 --- !u!1 &1753159918419610
 GameObject:
   m_ObjectHideFlags: 0

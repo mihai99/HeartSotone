@@ -828,6 +828,7 @@ GameObject:
   - component: {fileID: 400050}
   - component: {fileID: 9500000}
   - component: {fileID: 7163746659710714079}
+  - component: {fileID: 3899617381110362085}
   m_Layer: 0
   m_Name: GruntHP
   m_TagString: Untagged
@@ -889,6 +890,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 3761520564354017263}
   slider: {fileID: 9157291549352907233}
+--- !u!136 &3899617381110362085
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.6393317
+  m_Height: 1.9864765
+  m_Direction: 1
+  m_Center: {x: -0.010942826, y: 0.9532843, z: 1.0458345e-10}
 --- !u!1001 &3033931608111098006
 PrefabInstance:
   m_ObjectHideFlags: 0

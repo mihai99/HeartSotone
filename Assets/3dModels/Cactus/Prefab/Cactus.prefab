@@ -984,6 +984,7 @@ GameObject:
   - component: {fileID: 400052}
   - component: {fileID: 9500000}
   - component: {fileID: 8219005031648713341}
+  - component: {fileID: 3335374165467661222}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -1046,6 +1047,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 0}
   slider: {fileID: 0}
+--- !u!136 &3335374165467661222
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 11.187501
+  m_Height: 49.85775
+  m_Direction: 1
+  m_Center: {x: 0.05174634, y: 24.428873, z: 0}
 --- !u!1001 &8965101634147348579
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1002,6 +1002,7 @@ GameObject:
   - component: {fileID: 8980390744224071177}
   - component: {fileID: 8980390744216342973}
   - component: {fileID: 605050552601696204}
+  - component: {fileID: 1115593814109724322}
   m_Layer: 0
   m_Name: GoblinHunterMain
   m_TagString: Untagged
@@ -1064,6 +1065,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 3489679916691618090}
   slider: {fileID: 8884320337916841764}
+--- !u!136 &1115593814109724322
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980390744223769135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2744035
+  m_Height: 1.8185451
+  m_Direction: 1
+  m_Center: {x: -0.007474639, y: 0.40927264, z: 0}
 --- !u!1 &8980390744223769137
 GameObject:
   m_ObjectHideFlags: 0

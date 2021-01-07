@@ -695,6 +695,7 @@ GameObject:
   - component: {fileID: 971994672}
   - component: {fileID: 971994671}
   - component: {fileID: 6275975529389578467}
+  - component: {fileID: 1783957091831345974}
   m_Layer: 0
   m_Name: DragonSoulEaterPurplePBR
   m_TagString: Untagged
@@ -756,6 +757,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBarUI: {fileID: 358147015728538378}
   slider: {fileID: 5755252825016079620}
+--- !u!136 &1783957091831345974
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971994670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.4717926
+  m_Height: 5.2332573
+  m_Direction: 2
+  m_Center: {x: -0.089235455, y: 1.5900005, z: -0.048983384}
 --- !u!1 &974828130
 GameObject:
   m_ObjectHideFlags: 0

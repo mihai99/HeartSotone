@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     public Color32 FrendlyCardInitialColor;
     public Color32 EnamyCardInitialColor;
     public List<GameObject> EnamyCards;
+    public GameObject EnamyMarker;
+
     private void Start()
     {
         ActiveCardList = new List<PosibleSpawn>();
@@ -118,7 +120,12 @@ public class GameManager : MonoBehaviour
             if(FrendlySelectedCard)
             {
                 EnamySelctedCard.currentHealth -= FrendlySelectedCard.attack;
-                GetComponent<PhotonView>().RPC("SetNewCardHealth", RpcTarget.OthersBuffered, EnamySelctedCard.Name, EnamySelctedCard.currentHealth - FrendlySelectedCard.attack);
+                if (FrendlySelectedCard.GetComponent<Animator>() != null)
+                {
+                    FrendlySelectedCard.gameObject.GetComponent<Animator>().SetBool("Attack", true);
+                    FrendlySelectedCard.DisableAnimation();
+                }
+                GetComponent<PhotonView>().RPC("SetNewCardHealth", RpcTarget.OthersBuffered, EnamySelctedCard.Name, EnamySelctedCard.currentHealth);
                 EndTurn();
             }
         }
@@ -153,5 +160,15 @@ public class GameManager : MonoBehaviour
     {
         GetComponent<PhotonView>().RPC("Concede", RpcTarget.OthersBuffered);
         GetComponent<GameUIManager>().GameConcededModal.SetActive(true);
+    }
+
+    public void SetEnamyIsTracked(GameObject Enamy)
+    {
+        EnamyMarker = Enamy;
+    }
+
+    public void SetEnamyIsNotTracked()
+    {
+        EnamyMarker = null;
     }
 }
