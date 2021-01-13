@@ -14,9 +14,18 @@ public class CardManager : MonoBehaviour
     public Slider HealthBarSlider;
     public GameManager GameManager;
     public bool HasAttacked = false;
+    public Color32 InitialColor;
     // Start is called before the first frame update
     void Start()
     {
+        try
+        {
+        InitialColor = gameObject.transform.GetComponentInChildren<Renderer>().material.color;
+        }
+        catch
+        {
+            InitialColor = new Color32(0, 0, 0, 0);
+        }
         Name = gameObject.name;
         currentHealth=initialHealth;
         HealthBarSlider.value=CalculateHealth();
@@ -27,15 +36,29 @@ public class CardManager : MonoBehaviour
     void Update()
     {
         HealthBarSlider.value=CalculateHealth();
-        if(currentHealth<=0){
+        if(currentHealth<=0 ) {
+            if(GetComponent<PhotonView>())
+            {
             gameObject.GetComponentInChildren<Renderer>().enabled = false;
             if(gameObject.transform.GetParentComponent<EnamySpawnPoint>())
             {
                 gameObject.transform.GetParentComponent<EnamySpawnPoint>().CardMonster = null;
             }
-            this.GameManager.DestroyedCardList.Add(this.Name);
-            this.GameManager.ActiveCardList.RemoveAt(this.GameManager.ActiveCardList.FindIndex(x => x.Name == this.Name));
+            this.GameManager.EnamyCards.Remove(this.gameObject);
             Destroy(gameObject);
+
+            }
+            else
+            {
+                var removeIndex = this.GameManager.ActiveCardList.FindIndex(x => x.Name == Name);
+                if(removeIndex != -1)
+                {
+                    this.GameManager.ActiveCardList.RemoveAt(removeIndex);
+                    this.GameManager.DestroyedCardList.Add(this.Name);
+                    Destroy(gameObject);
+                }
+
+            }
         }
         if(GameManager.EnamyMarker != null)
         {
@@ -58,12 +81,19 @@ public class CardManager : MonoBehaviour
         Invoke("DisableAttackAnimation", 100);
     }
 
+    public void ResetAttack()
+    {
+        gameObject.transform.GetComponentInChildren<Renderer>().material.color = InitialColor;
+        HasAttacked = false;
+    }
+
     private void OnMouseDown()
     {
         if(GetComponent<PhotonView>())
         {
             GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetEnamySelectedCard(this);
-        } else
+        }
+        else if(HasAttacked == false)
         {
             GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetFrendlySelectedCard(this);
         }

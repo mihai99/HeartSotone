@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         StartEnamyTurn();
         ResetSelectedCards();
         EndturnButton.interactable = false;
-        StartEnamyTurn();
+        ActiveCardList.ForEach(x => x.Prefab.GetComponent<CardManager>().ResetAttack());
     }
 
     private void ResetSelectedCards()
@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
             EnamySelctedCard = card;
             EnamyCardInitialColor = EnamySelctedCard.gameObject.transform.GetComponentInChildren<Renderer>().material.color;
             EnamySelctedCard.gameObject.transform.GetComponentInChildren<Renderer>().material.color = new Color32(255, 0, 0, 255);
-            if(FrendlySelectedCard)
+            if(FrendlySelectedCard && FrendlySelectedCard.HasAttacked == false)
             {
                 EnamySelctedCard.currentHealth -= FrendlySelectedCard.attack;
                 if (FrendlySelectedCard.GetComponent<Animator>() != null)
@@ -125,8 +125,11 @@ public class GameManager : MonoBehaviour
                     FrendlySelectedCard.gameObject.GetComponent<Animator>().SetBool("Attack", true);
                     FrendlySelectedCard.DisableAnimation();
                 }
+                FrendlySelectedCard.HasAttacked = true;
+                FrendlySelectedCard.gameObject.transform.GetComponentInChildren<Renderer>().material.color = new Color32(255, 255, 255, 255);
                 GetComponent<PhotonView>().RPC("SetNewCardHealth", RpcTarget.OthersBuffered, EnamySelctedCard.Name, EnamySelctedCard.currentHealth);
-                EndTurn();
+                ResetSelectedCards();
+             //   EndTurn();
             }
         }
     }
